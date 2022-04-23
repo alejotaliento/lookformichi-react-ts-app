@@ -1,0 +1,8 @@
+.App {
+  background-color: rgb(43, 117, 145);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
