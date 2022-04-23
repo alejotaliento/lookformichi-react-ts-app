@@ -7,7 +7,7 @@ import styles from "./App.module.css";
 const App = () => {
   return (
     <div className={styles.App}>
-      <header className={styles.AppHeader}>
+      <header>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
