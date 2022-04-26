@@ -11,3 +11,133 @@
 p {
   margin: 16px;
 }
+
+.titulo{
+  background-color: rgb(43, 117, 145);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size:80px;
+  font-style: oblique;
+  font-variant: small-caps;
+  
+}
+
+
+
+.pestañas{
+  background-color: rgb(87, 60, 105);
+  box-shadow: 0 8px 10px rgb(0, 0, 0);;
+  width: 970px;
+  height: 70px;
+  border-radius: 50px;
+  font-size: 25px; 
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  margin: 20px;
+  flex-direction: column;
+}
+
+.btnPestañas{
+  
+    align-items: center;
+    justify-content: center;
+    flex-direction: flex;
+    width: 170px;
+    height: 50px;
+    background-color: #9c6ec2;
+    border-color: rgb(200, 143, 202);
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 5px rgb(0, 0, 0);
+    border-radius: 50px;
+    cursor:grab;
+    margin: 10px;
+    
+  }
+
+  .btnPestañas:hover{
+    background-color: rgb(170, 133, 187);
+    box-shadow: 0 8px 10px rgb(0, 0, 0);;
+    font-size: 17px;
+    
+    color: white
+  }
+
+  .contactUs{
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+    width: 200px;
+    height: 20px;
+    background-color: #9c6ec2;
+    border-color: rgb(200, 143, 202);
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 5px rgb(0, 0, 0);
+    border-radius: 50px;
+    cursor:grab;
+    margin: 50px;
+    padding: 20px;
+    z-index: 2;
+    
+    transition: .1s ease-out;
+  }
+  
+  .contactUs:hover{
+    background-color: rgb(170, 133, 187);
+    box-shadow: 0 8px 10px rgb(0, 0, 0);;
+    font-size: 15px;
+  }
+
+  .donaciones{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 20px;
+    background-color: #9c6ec2;
+    border-color: rgb(200, 143, 202);
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 5px rgb(0, 0, 0);
+    border-radius: 50px;
+    cursor:grab;
+    margin: 50px;
+    padding: 20px;
+    z-index: 2;
+    
+    transition: .1s ease-out;
+  }
+  
+  .donaciones:hover{
+    background-color: rgb(170, 133, 187);
+    box-shadow: 0 8px 10px rgb(0, 0, 0);;
+    font-size: 15px;
+  }
+
+  .marcaReg{
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    display: flex;
+  }
+
+   
+  

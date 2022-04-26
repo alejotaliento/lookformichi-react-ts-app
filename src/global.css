@@ -21,11 +21,92 @@ body {
   flex-wrap: nowrap;
   border-radius: 35px;
   box-shadow: 0 12px 5px rgb(1 6 8);
-  height: 400px;
-  width: 280px;
+  height: 380px;
+  width: 230px;
   background-image: linear-gradient(to bottom, skyblue,lightblue,lightgreen);
   font-size: large;
   font-style: italic;
   text-align: center;
   margin: 10px;        
+}
+
+/*.card:hover{
+  margin: 16px;
+  padding: 16px;
+  box-sizing:border-box ;
+  border-radius: 35px;
+  box-shadow:  -0 8px 5px rgb(1, 6, 8);
+  height: 500px;
+  width: 350px;
+  background-image:linear-gradient(to bottom, skyblue,lightblue,lightgreen);
+  font-size: large;
+  font-style: italic;
+  display: grid; 
+  transition-delay: .3s;
+ }*/
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  background-color: #9c6ec2;
+  border-color: rgb(200, 143, 202);
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 5px rgb(0, 0, 0);
+  border-radius: 50px;
+  cursor:grab;
+  
+  transition: .1s ease-out;
+}
+
+.btn:hover{
+  background-color: rgb(87, 60, 105);
+  box-shadow: 0 8px 10px rgb(0, 0, 0);;
+  width: 170px;
+  height: 170px;
+  border-radius: 250px;
+  font-size: 25px;  
+  font-weight: bold;
+}
+
+.btnDescription{
+  align-items: center;
+  justify-content: center;
+  flex-direction: flex;
+  width: 170px;
+  height: 50px;
+  background-color: #9c6ec2;
+  /* background-color: #4b9478; */
+  /* background-color: #0f6148; */
+  /* background-color: #92c8e7; */
+  /* background-color: #629dbe; */
+  /* background-color: #c7bccf; */
+  /* background-color: #342b3b; */
+  border-color: rgb(200, 143, 202);
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0 4px 5px rgb(0, 0, 0);
+  border-radius: 50px;
+  cursor:grab;
+  margin: 10px;
+  
+} 
+
+.btnDescription:hover{
+  background-color: rgb(244, 255, 244);
+  box-shadow: 0 8px 10px rgb(0, 0, 0);;
+  font-weight: bold;
+  color: #9c6ec2;
+  width: 170px;
+  height: 50px;
+  border-radius: 50px;
+  
 }
