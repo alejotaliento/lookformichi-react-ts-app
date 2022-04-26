@@ -1,6 +1,6 @@
 import React from "react";
 
-import Home from "../components/BlogCardList";
+import Home from "../pages/Home";
 
 import styles from "./App.module.css";
 

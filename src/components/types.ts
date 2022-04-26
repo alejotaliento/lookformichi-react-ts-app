@@ -5,4 +5,5 @@ export interface IBlogCard {
   description: string;
   image: string;
   isNew?: boolean;
+  state: string;
 }

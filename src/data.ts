@@ -1,4 +1,4 @@
-import { IBlogCard } from "./components/types";
+import type { IBlogCard } from "./components/types";
 
 export const cardArray: IBlogCard[] = [
   {
