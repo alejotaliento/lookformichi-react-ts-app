@@ -10,7 +10,7 @@ const BlogCard = ({ id, name, description, image, state }: IBlogCard) => {
       <h3>{name}</h3>
       <p>{state}</p>
       <div className={styles.container}>
-        {image ? <img alt="" src={image} /> : <div>Loading...</div>}
+        {image ? <img alt="" loading="lazy" src={image} /> : <div>Loading...</div>}
       </div>
       <p>{description}</p>
     </div>
