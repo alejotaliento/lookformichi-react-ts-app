@@ -1,29 +1,16 @@
 import React from "react";
 
-import Service from "../../services/RandomDog";
+import type { IBlogCard } from "../types";
 
-import { IBlogCard } from "./types";
 import styles from "./index.module.css";
 
-const BlogCard = (props: IBlogCard) => {
-  const [data, setData] = React.useState({ ...props });
-  const { id, name, description, image, state: estado } = data;
-
-  React.useEffect(() => {
-    if (!image) {
-      Service.getImage().then((image) => {
-        return setData((prev) => ({ ...prev, image }));
-      });
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
+const BlogCard = ({ id, name, description, image, state }: IBlogCard) => {
   return (
     <div className="card" id={`${id}`}>
       <h3>{name}</h3>
-      <p>{estado}</p>
+      <p>{state}</p>
       <div className={styles.container}>
-        <img alt="" src={image} />
+        {image ? <img alt="" src={image} /> : <div>Loading...</div>}
       </div>
       <p>{description}</p>
     </div>

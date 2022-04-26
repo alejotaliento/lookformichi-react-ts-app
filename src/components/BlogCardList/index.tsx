@@ -1,23 +1,18 @@
-import { useState } from "react";
+import React from "react";
 
 import BlogCard from "../BlogCard";
-import NewBlogCard from "../NewBlogCard";
-import type { IBlogCard } from "../BlogCard/types";
-import { cardArray } from "../../data";
+import type { IBlogCard } from "../types";
 
 import styles from "./index.module.css";
 
-// const hasImage = (data: IBlogCard[]) => data.every((items) => items.image);
+export interface BlogCardListProps {
+  data: IBlogCard[];
+}
 
-const BlogCardList = () => {
-  const [state, setState] = useState<IBlogCard[]>(cardArray);
-
+const BlogCardList = ({ data }: BlogCardListProps) => {
   return (
     <div className={styles.root}>
-      <NewBlogCard data={state} setData={setState} />
-      {state.map((item, index) => (
-        <BlogCard key={index} {...item} />
-      ))}
+      {data && data.map((item, index) => <BlogCard key={index} {...item} />)}
     </div>
   );
 };
