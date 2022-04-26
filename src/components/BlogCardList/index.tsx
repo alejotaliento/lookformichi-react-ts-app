@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import BlogCard from "../BlogCard";
 import NewBlogCard from "../NewBlogCard";
-import type { IBlogCard } from "../BlogCard/types";
+import type { IBlogCard } from "../types";
 import { cardArray } from "../../data";
 
 import styles from "./index.module.css";
