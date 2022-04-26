@@ -2,12 +2,12 @@ import React from "react";
 
 import Service from "../../services/RandomDog";
 
-import { IBlogCard } from "./types";
+import { IBlogCard } from "../types";
 import styles from "./index.module.css";
 
 const BlogCard = (props: IBlogCard) => {
   const [data, setData] = React.useState({ ...props });
-  const { id, name, description, image, state: estado } = data;
+  const { id, name, ubication, description, image, } = data;
 
   React.useEffect(() => {
     if (!image) {
@@ -21,11 +21,11 @@ const BlogCard = (props: IBlogCard) => {
   return (
     <div className="card" id={`${id}`}>
       <h3>{name}</h3>
-      <p>{estado}</p>
+      <p>{ubication}</p>
       <div className={styles.container}>
         <img alt="" src={image} />
       </div>
-      <p>{description}</p>
+      <button className="btnDescription">{description}</button>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import { mockNewItem } from "../../data";
 
-import { IBlogCard } from "./types";
+import { IBlogCard } from "../types";
 
 export interface Props {
   data: IBlogCard[];
@@ -14,7 +14,7 @@ const NewBlogCard = ({ setData }: Props) => {
 
   return (
     <div className="card">
-      <button onClick={() => handleClick(mockNewItem)}>Crear</button>
+      <button className="btn" onClick={() => handleClick(mockNewItem)}>Upload pet</button>
     </div>
   );
 };
