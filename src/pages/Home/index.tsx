@@ -9,13 +9,15 @@ import type { IBlogCard } from "../../components/types";
 const Home = () => {
   const [pupis, setPupis] = React.useState<IBlogCard[]>(cardArray);
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
+  const [error, setError] = React.useState<string>(null);
 
   React.useEffect(() => {
     if (!hasImage(pupis)) {
       setIsLoading(true);
+
       // set all items without image
-      (async () => {
-        await Service.getImage().then((res) => {
+      try {
+        Service.getImage().then((res) => {
           setPupis((prev) => {
             const newPupis = [...prev];
 
@@ -24,13 +26,15 @@ const Home = () => {
             return newPupis;
           });
         });
-      })();
-      setIsLoading(false);
+        setIsLoading(false);
+      } catch (err) {
+        setError(err);
+      }
     }
   }, [pupis]);
 
-  if (isLoading) {
-    return <div>Loading...</div>;
+  if (isLoading || error) {
+    return <>{isLoading ? <div>Loading...</div> : <div>Error</div>}</>;
   }
 
   return <BlogCardList data={pupis} />;
