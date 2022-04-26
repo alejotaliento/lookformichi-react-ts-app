@@ -1,61 +1,90 @@
-import { IBlogCard } from "./components/BlogCard/types";
+import { IBlogCard } from "./components/types";
 
 export const cardArray: IBlogCard[] = [
   {
     id: 1,
     name: "Toby",
-    state: "",
+    ubication: 'Lomas de Zamora',
     image: "",
-    description: "marron",
+    description: "ver detalle",
   },
   {
     id: 2,
     name: "Fito",
-    state: "",
+    ubication: 'San Vicente',
     image: undefined,
-    description: "marron",
+    description: "ver detalle",
   },
   {
     id: 3,
     name: "Rocky",
-    state: "",
+    ubication: 'Escobar',
     image: undefined,
-    description: "marron",
+    description: "ver detalle",
   },
   {
     id: 4,
     name: "Hercules",
-    state: "",
+    ubication: 'CABA - Flores',
     image: undefined,
-    description: "marron",
+    description: "ver detalle",
   },
   {
     id: 5,
     name: "Pini",
-    state: "",
+    ubication: 'Retiro',
     image: undefined,
-    description: "marron",
+    description: "ver detalle",
   },
   {
     id: 6,
     name: "Simon",
-    state: "",
+    ubication: 'Lincoln',
     image: undefined,
-    description: "marron",
+    description: "ver detalle",
   },
   {
     id: 7,
     name: "Sasha",
-    state: "",
+    ubication: 'San Justo',
     image: undefined,
-    description: "Negro",
+    description: "ver detalle",
+  },
+  {
+    id: 8,
+    name: "Tolueno",
+    ubication: 'San Justo',
+    image: undefined,
+    description: "ver detalle",
+  },
+  {
+    id: 9,
+    name: "Baltazar",
+    ubication: 'San Justo',
+    image: undefined,
+    description: "ver detalle",
+  },
+  {
+    id: 10,
+    name: "Indiana",
+    ubication: 'San Justo',
+    image: undefined,
+    description: "ver detalle",
+  },
+  {
+    id: 11,
+    name: "Simétrico",
+    ubication: 'San Justo',
+    image: undefined,
+    description: "ver detalle",
   },
 ];
 
 export const mockNewItem: IBlogCard = {
   id: 0,
   name: "New Item",
+  ubication: 'Test click ubication',
   description: "Test click event",
   image: "",
-  state: "",
+  
 };
