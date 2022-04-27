@@ -1,5 +1,9 @@
 html, body {
-  background-color: rgb(43, 117, 145);
+  /* background-color: rgb(43, 117, 145); */
+  /* background-color: antiquewhite; */
+  /* background-color: rgb(238, 232, 225); */
+  background-color: #f2e9f2E4;
+  
 }
 
 body {
@@ -28,14 +32,26 @@ main {
   align-items: center;
   flex-wrap: nowrap;
   border-radius: 35px;
-  box-shadow: 0 12px 5px rgb(1 6 8);
+  /* box-shadow: 0 12px 5px rgb(1 6 8); */
   height: 380px;
   width: 230px;
-  background-image: linear-gradient(to bottom, skyblue,lightblue,lightgreen);
+  /* background-image: linear-gradient(to bottom, skyblue,lightblue,lightgreen); */
+  /* background-color: rgb(238, 196, 196); */
+  /* background-color: rgb(238, 232, 225); */
+  /* background-color: antiquewhite; */
+  /* box-shadow: 0 15px 90px 0 rgba(195,195,195, 0.30); */
+  box-shadow: 0 2px 6px #0000001f;
+  
   font-size: large;
   font-style: italic;
   text-align: center;
-  margin: 10px;        
+  margin: 25px;        
+}
+
+.card:hover{
+  box-shadow: 0 1px 2px;
+  transform:scale(120%);
+  background-color: #f2e9f2E4;
 }
 
 /*.card:hover{
@@ -89,19 +105,22 @@ main {
   flex-direction: flex;
   width: 170px;
   height: 50px;
-  background-color: #9c6ec2;
+  /* background-color: rgb(43, 117, 145); */
+  /* background-color: #9c6ec2; */
   /* background-color: #4b9478; */
   /* background-color: #0f6148; */
   /* background-color: #92c8e7; */
   /* background-color: #629dbe; */
   /* background-color: #c7bccf; */
   /* background-color: #342b3b; */
+  /* background-color: #F5CDC5; */
+  background-color: #81c9cf;
   border-color: rgb(200, 143, 202);
   color: rgb(255, 255, 255);
   font-style: italic;
   font-size: 18px;
   border: none;
-  box-shadow: 0 4px 5px rgb(0, 0, 0);
+  /* box-shadow: 0 4px 5px rgb(0, 0, 0); */
   border-radius: 50px;
   cursor:grab;
   margin: 10px;
@@ -109,10 +128,13 @@ main {
 } 
 
 .btnDescription:hover{
-  background-color: rgb(244, 255, 244);
-  box-shadow: 0 8px 10px rgb(0, 0, 0);;
+  /* background-color: #306172; */
+  /* background-color: #F5CDC5; */
+  background-color: #ee9c91;
+  /* box-shadow: 0 8px 10px rgb(0, 0, 0);; */
   font-weight: bold;
-  color: #9c6ec2;
+  /* color: #9c6ec2; */
+  color: white;
   width: 170px;
   height: 50px;
   border-radius: 50px;

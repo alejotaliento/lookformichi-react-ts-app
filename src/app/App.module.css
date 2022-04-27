@@ -7,6 +7,7 @@
   height: 100%;
   align-content: center;
   align-items: center;
+  
 }
 
 p {
@@ -14,16 +15,17 @@ p {
 }
 
 .titulo{
-  background-color: rgb(43, 117, 145);
+  background-color: linear-gradient #ee9c91;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  color: white;
+  color: black;
   font-size:80px;
   font-style: oblique;
+  font-family: 'Coiny', cursive;
   font-variant: small-caps;
   
 }
@@ -31,9 +33,14 @@ p {
 
 
 .pestañas{
-  background-color: rgb(87, 60, 105);
-  box-shadow: 0 8px 10px rgb(0, 0, 0);;
-  width: 970px;
+  /* background-color: rgb(87, 60, 105); */
+  /* box-shadow: 0 8px 10px rgb(0, 0, 0); */
+  /* background-color: antiquewhite; */
+  /* background-color:#ee9c91; */
+  background-color: #F5CDC5;
+
+
+  width: 1300px;
   height: 70px;
   border-radius: 50px;
   font-size: 25px; 
@@ -51,14 +58,15 @@ p {
     flex-direction: flex;
     width: 170px;
     height: 50px;
-    background-color: #9c6ec2;
-    border-color: rgb(200, 143, 202);
+    /* background-color: #9c6ec2; */
+    /* border-color: rgb(200, 143, 202); */
+    background-color: #F5CDC5;
     color: rgb(255, 255, 255);
     font-style: italic;
     font-size: 17px;
     font-weight: bold;
     border: none;
-    box-shadow: 0 4px 5px rgb(0, 0, 0);
+    /* box-shadow: 0 4px 5px rgb(0, 0, 0); */
     border-radius: 50px;
     cursor:grab;
     margin: 10px;
@@ -66,9 +74,14 @@ p {
   }
 
   .btnPestañas:hover{
-    background-color: rgb(170, 133, 187);
-    box-shadow: 0 8px 10px rgb(0, 0, 0);;
+    /* background-color: rgb(170, 133, 187); */
+
+    /* box-shadow: 0 8px 10px rgb(0, 0, 0);; */
     font-size: 17px;
+    /* background-color: #306172; */
+    background-color: #ee9c91;
+
+
     
     color: white
   }
@@ -79,14 +92,15 @@ p {
     justify-content:center;
     width: 200px;
     height: 20px;
-    background-color: #9c6ec2;
+    /* background-color: #9c6ec2; */
+    background-color: #ee9c91;
     border-color: rgb(200, 143, 202);
     color: rgb(255, 255, 255);
     font-style: italic;
     font-size: 15px;
     font-weight: bold;
     border: none;
-    box-shadow: 0 4px 5px rgb(0, 0, 0);
+    /* box-shadow: 0 4px 5px rgb(0, 0, 0); */
     border-radius: 50px;
     cursor:grab;
     margin: 50px;
@@ -97,9 +111,11 @@ p {
   }
   
   .contactUs:hover{
-    background-color: rgb(170, 133, 187);
-    box-shadow: 0 8px 10px rgb(0, 0, 0);;
+    /* background-color: rgb(170, 133, 187); */
+    background-color: #F5CDC5;
+    /* box-shadow: 0 1px 3px rgb(0, 0, 0); */
     font-size: 15px;
+    
   }
 
   .donaciones{
@@ -108,26 +124,28 @@ p {
     justify-content: center;
     width: 200px;
     height: 20px;
-    background-color: #9c6ec2;
+    /* background-color: #9c6ec2; */
+    background-color: #ee9c91;
     border-color: rgb(200, 143, 202);
     color: rgb(255, 255, 255);
     font-style: italic;
     font-size: 15px;
     font-weight: bold;
     border: none;
-    box-shadow: 0 4px 5px rgb(0, 0, 0);
+    /* box-shadow: 0 1px 1px rgb(0, 0, 0); */
     border-radius: 50px;
     cursor:grab;
     margin: 50px;
     padding: 20px;
-    z-index: 2;
-    
+    z-index: 2; 
     transition: .1s ease-out;
   }
   
   .donaciones:hover{
-    background-color: rgb(170, 133, 187);
-    box-shadow: 0 8px 10px rgb(0, 0, 0);;
+    /* background-color: rgb(170, 133, 187); */
+    background-color: #F5CDC5;
+
+    /* box-shadow: 0 8px 10px rgb(0, 0, 0);; */
     font-size: 15px;
   }
 

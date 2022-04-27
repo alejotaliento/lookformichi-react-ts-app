@@ -11,13 +11,6 @@ img {
     
 }
 
-img:hover{
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    width: 175%;
-    height: 190%;
-    border-radius: 50%;
-    
-    
-} 
+/* img:hover{
+
+}   */
