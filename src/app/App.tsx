@@ -10,7 +10,7 @@ const App = () => {
       <header>
         <div>
         <p className={styles.titulo}>
-        HaustieЯ
+        Lovcy Pet
         </p>
         </div>
         <div className={styles.pestañas}>
