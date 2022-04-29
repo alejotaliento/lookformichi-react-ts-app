@@ -5,6 +5,7 @@ import { cardArray } from "../../data";
 import { hasImage } from "../../utils";
 import Service from "../../services/RandomDog";
 import type { IBlogCard } from "../../components/types";
+import NewBlogCard from "../../components/NewBlogCard";
 
 const Home = () => {
   const [pupis, setPupis] = React.useState<IBlogCard[]>(cardArray);
@@ -14,11 +15,11 @@ const Home = () => {
   React.useEffect(() => {
     if (!hasImage(pupis)) {
       setIsLoading(true);
-    
+
       // set all items without image
       try {
         // if isNew -> false ---Card 1 sin imagen, el resto con
-        
+
         Service.getImage().then((res) => {
           setPupis((prev) => {
             const newPupis = [...prev];
@@ -33,14 +34,18 @@ const Home = () => {
         setError(err);
       }
     }
-  
   }, [pupis]);
 
   if (isLoading || error) {
     return <>{isLoading ? <div>Loading...</div> : <div>Error</div>}</>;
   }
 
-  return <BlogCardList data={pupis} />;
+  return (
+    <div>
+      <NewBlogCard data={pupis} setData={setPupis} />
+      <BlogCardList data={pupis} />
+    </div>
+  );
 };
 
 export default Home;
