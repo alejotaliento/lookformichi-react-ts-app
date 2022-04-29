@@ -1,44 +1,39 @@
-import React, {useState} from "react";
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const Modal = ({children, estado, cambiarEstado}) => {
-    return (
-        <>
-            {estado &&
-            <Overlay>
-                <ContenedorModal>
-                    <EncabezadoModal>
-                        <h3>Detalles:</h3>
-                    </EncabezadoModal>
+const Modal = ({ children, estado, cambiarEstado }) => {
+  return (
+    <>
+      {estado && (
+        <Overlay>
+          <ContenedorModal>
+            <EncabezadoModal>
+              <h3>Detalles:</h3>
+            </EncabezadoModal>
 
-                    <BotonCerrar onClick={() => cambiarEstado(false) }>X</BotonCerrar>
+            <BotonCerrar onClick={() => cambiarEstado(false)}>X</BotonCerrar>
 
-                    {children}
-                </ContenedorModal>
-            </Overlay>
-            }
-        </>
-    );
-}
+            {children}
+          </ContenedorModal>
+        </Overlay>
+      )}
+    </>
+  );
+};
 
 export default Modal;
 
 const Overlay = styled.div`
-    
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top 0;
-    left 0;
-    background: rgba(0,0,0,.5);
+position: absolute;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-
+    align-content: center;
+    flex-wrap: nowrap;
+    background: rgba(0,0,0,.5);
 `;
 
 const ContenedorModal = styled.div`
-
     width: 500px;
     min-height: 100px;
     background: #fff;
@@ -64,7 +59,6 @@ const EncabezadoModal = styled.div`
 `;
 
 const BotonCerrar = styled.button`
-
     position: absolute;
     background: none;
     color: #1766DC;
