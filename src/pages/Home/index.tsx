@@ -14,9 +14,11 @@ const Home = () => {
   React.useEffect(() => {
     if (!hasImage(pupis)) {
       setIsLoading(true);
-
+    
       // set all items without image
       try {
+        // if isNew -> false ---Card 1 sin imagen, el resto con
+        
         Service.getImage().then((res) => {
           setPupis((prev) => {
             const newPupis = [...prev];
@@ -31,6 +33,7 @@ const Home = () => {
         setError(err);
       }
     }
+  
   }, [pupis]);
 
   if (isLoading || error) {

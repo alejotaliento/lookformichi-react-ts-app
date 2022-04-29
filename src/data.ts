@@ -2,11 +2,13 @@ import type { IBlogCard } from "./components/types";
 
 export const cardArray: IBlogCard[] = [
   {
-    id: 1,
+    id: 1 ,
     name: "Toby",
     ubication: 'Lomas de Zamora',
     image: "",
     description: "ver detalle",
+    state: '',
+    isNew: true,
   },
   {
     id: 2,
@@ -14,6 +16,7 @@ export const cardArray: IBlogCard[] = [
     ubication: 'San Vicente',
     image: undefined,
     description: "ver detalle",
+    state: '',
   },
   {
     id: 3,
@@ -21,6 +24,7 @@ export const cardArray: IBlogCard[] = [
     ubication: 'Escobar',
     image: undefined,
     description: "ver detalle",
+    state: '',
   },
   {
     id: 4,
@@ -28,6 +32,7 @@ export const cardArray: IBlogCard[] = [
     ubication: 'CABA - Flores',
     image: undefined,
     description: "ver detalle",
+    state: '',
   },
   {
     id: 5,
@@ -35,6 +40,7 @@ export const cardArray: IBlogCard[] = [
     ubication: 'Retiro',
     image: undefined,
     description: "ver detalle",
+    state: '',
   },
   {
     id: 6,
@@ -42,6 +48,7 @@ export const cardArray: IBlogCard[] = [
     ubication: 'Lincoln',
     image: undefined,
     description: "ver detalle",
+    state: '',
   },
   {
     id: 7,
@@ -49,6 +56,7 @@ export const cardArray: IBlogCard[] = [
     ubication: 'San Justo',
     image: undefined,
     description: "ver detalle",
+    state: '',
   },
   {
     id: 8,
@@ -56,6 +64,7 @@ export const cardArray: IBlogCard[] = [
     ubication: 'San Justo',
     image: undefined,
     description: "ver detalle",
+    state: '',
   },
   {
     id: 9,
@@ -63,6 +72,7 @@ export const cardArray: IBlogCard[] = [
     ubication: 'San Justo',
     image: undefined,
     description: "ver detalle",
+    state: '',
   },
   {
     id: 10,
@@ -70,6 +80,7 @@ export const cardArray: IBlogCard[] = [
     ubication: 'San Justo',
     image: undefined,
     description: "ver detalle",
+    state: '',
   },
   {
     id: 11,
@@ -77,6 +88,7 @@ export const cardArray: IBlogCard[] = [
     ubication: 'San Justo',
     image: undefined,
     description: "ver detalle",
+    state: '',
   },
 ];
 
@@ -85,6 +97,7 @@ export const mockNewItem: IBlogCard = {
   name: "New Item",
   ubication: 'Test click ubication',
   description: "Test click event",
+  state: '',
   image: "",
-  
+  isNew: false,
 };
