@@ -7,6 +7,8 @@ import Service from "../../services/RandomDog";
 import type { IBlogCard } from "../../components/types";
 import NewBlogCard from "../../components/NewBlogCard";
 
+import styles from "./index.module.css";
+
 const Home = () => {
   const [pupis, setPupis] = React.useState<IBlogCard[]>(cardArray);
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
@@ -41,7 +43,7 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <div className={styles.root}>
       <NewBlogCard data={pupis} setData={setPupis} />
       <BlogCardList data={pupis} />
     </div>
