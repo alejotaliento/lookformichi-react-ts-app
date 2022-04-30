@@ -9,7 +9,6 @@ import Modal from "../Modals/modal";
 import styles from "./index.module.css";
 
 export interface Props {
-  data: IBlogCard[];
   setData: any;
 }
 

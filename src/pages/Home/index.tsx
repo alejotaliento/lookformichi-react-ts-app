@@ -44,7 +44,7 @@ const Home = () => {
 
   return (
     <div className={styles.root}>
-      <NewBlogCard data={pupis} setData={setPupis} />
+      <NewBlogCard setData={setPupis} />
       <BlogCardList data={pupis} />
     </div>
   );
