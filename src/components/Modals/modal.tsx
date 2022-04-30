@@ -24,13 +24,18 @@ const Modal = ({ children, estado, cambiarEstado }) => {
 export default Modal;
 
 const Overlay = styled.div`
-position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
+    
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     background: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    
 `;
 
 const ContenedorModal = styled.div`
