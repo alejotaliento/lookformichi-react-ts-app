@@ -54,7 +54,6 @@ p {
 }
 
 .btnPestañas{
-  
     align-items: center;
     justify-content: center;
     flex-direction: flex;
@@ -77,15 +76,11 @@ p {
 
   .btnPestañas:hover{
     /* background-color: rgb(170, 133, 187); */
-
     /* box-shadow: 0 8px 10px rgb(0, 0, 0);; */
     font-size: 18px;
     /* background-color: #306172; */
     /* background-color: #ee9c91; */
     background-color: rgb(221, 92, 92);
-
-
-    
     color: white
   }
 
@@ -109,7 +104,6 @@ p {
     margin: 50px;
     padding: 20px;
     z-index: 2;
-    
     transition: .1s ease-out;
   }
   
@@ -121,7 +115,7 @@ p {
     
   }
 
-  .donaciones{
+.donaciones{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -142,24 +136,53 @@ p {
     padding: 20px;
     z-index: 2; 
     transition: .1s ease-out;
-  }
+}
   
-  .donaciones:hover{
+.donaciones:hover{
     /* background-color: rgb(170, 133, 187); */
     background-color: #F5CDC5;
-
     /* box-shadow: 0 8px 10px rgb(0, 0, 0);; */
     font-size: 15px;
-  }
+}
 
-  .marcaReg{
-    font-size: 18px;
-    font-weight: bold;
+.marcaReg{
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  display: flex;
+}
+
+.container_btns_donaciones {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn_donacion {
     align-items: center;
     justify-content: center;
-    margin: 30px;
-    display: flex;
-  }
+    flex-direction: flex;
+    width: 170px;
+    height: 30px;
+    background-color: #ee9c91;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor:grab;
+    margin: 10px;
+}
 
-   
-  
+.btn_donacion:hover{
+  background-color: rgb(221, 92, 92);
+  font-weight: bold;
+  color: white;
+  width: 170px;
+  height: 30px;
+  border-radius: 50px;
+}

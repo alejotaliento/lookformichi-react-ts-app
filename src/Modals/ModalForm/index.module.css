@@ -1,0 +1,35 @@
+.input {
+    border-radius: 9px;
+    width: 240px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin: 5px; 
+}
+
+.input2 {
+    border-radius: 9px;
+    width: 250px;
+    height: 150px;
+}
+
+.submit {
+    align-items: center;
+    justify-content: center;
+    flex-direction: flex;
+    width: 170px;
+    height: 30px;
+    background-color: #ee9c91;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor:grab;
+    margin: 10px
+}
+
+.submit:hover {
+    font-size: 15px;
+    background-color: rgb(221, 92, 92);
+    color: white
+}

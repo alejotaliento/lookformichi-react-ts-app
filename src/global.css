@@ -48,11 +48,11 @@ main {
   margin: 25px;  
 }
 
-.card:hover{
+/* .card:hover{
   box-shadow: 0 1px 2px;
   transform:scale(120%);
   background-color: #f2e9f2E4;
-}
+} */
 
 .name{
   font-style: normal;
@@ -63,26 +63,12 @@ main {
 
 .ubication{
   font-style: normal;
-  /* margin: 5px; */
   font-size: 16px;
 }
 
-/*.card:hover{
-  margin: 16px;
-  padding: 16px;
-  box-sizing:border-box ;
-  border-radius: 35px;
-  box-shadow:  -0 8px 5px rgb(1, 6, 8);
-  height: 500px;
-  width: 350px;
-  background-image:linear-gradient(to bottom, skyblue,lightblue,lightgreen);
-  font-size: large;
-  font-style: italic;
-  display: grid; 
-  transition-delay: .3s;
- }*/
+/* BUTTONS */
 
-.btn{
+.btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -99,7 +85,6 @@ main {
   box-shadow: 0 4px 5px rgb(0, 0, 0);
   border-radius: 50px;
   cursor:grab;
-  
   transition: .1s ease-out;
 }
 
@@ -151,5 +136,11 @@ main {
   height: 30px;
   border-radius: 50px;
   
+}
+
+.input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
