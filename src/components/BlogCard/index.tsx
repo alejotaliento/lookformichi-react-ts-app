@@ -1,10 +1,10 @@
-import React, {useState} from "react";
-import Modal from "../Modals/modal";
+import React, { useState } from "react";
+
+import { ModalBase } from "../../Modals";
 
 import type { IBlogCard } from "../types";
 
 import styles from "./index.module.css";
-
 
 const BlogCard = ({ id, name, ubication, description, image, state }: IBlogCard) => {
 
@@ -18,9 +18,9 @@ const [modalState, changeState] = useState(false);
       <div className={styles.container}>
         {image  ? <img alt="" loading="lazy" src={image}  /> : <div>Loading...</div>}
       </div>
-      <Modal cambiarEstado={changeState} estado={modalState}>
+      <ModalBase title="Descripción" cambiarEstado={changeState} estado={modalState}>
         {description}
-      </Modal>
+      </ModalBase>
       
       <button  onClick={(() => changeState(!modalState))} className="btnDescription">{description}</button>
     </div>
